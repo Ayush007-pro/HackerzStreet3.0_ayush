@@ -77,7 +77,7 @@ body {
 .article-background::after {
   content: '';
   position: absolute;
-  inset: 0;
+  inset: 0; 
   background: 
       /* First noise layer */
       repeating-radial-gradient(
@@ -97,6 +97,7 @@ body {
       );
   mix-blend-mode: overlay;
   filter: url(#noiseFilter);
+  pointer-events: none;
 }
 
 article h1 {
@@ -131,12 +132,54 @@ article h1 {
   border: 2px dashed rgba(241, 241, 241, 1);
   min-height: 289px;
   display: flex;
+  flex-direction: column; /* aligns image and text vertically */
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-weight: 500;
 }
 
+.track_item img{
+  transform: translateY(50px);
+}
+
+.track_subject{
+  color: #faa41a;
+  /* font-weight: 600; */
+}
+
+.hidden {
+  opacity: 0;
+  /* z-index: 10; */
+  transform: translateY(50px); /*start 50px below its actual position*/
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  background: transparent;
+  color: white;
+  padding: 5px;
+  font: normal 500 18px Poppins;
+  text-align: center;
+  width: fit-content;
+}
+
+.track_item:hover{
+    background: linear-gradient(to bottom, 
+    rgba(12, 12, 12, 0.8),
+    rgba(26, 21, 12, 0.8),
+      rgba(39, 29, 14, 0.8)
+    );
+}
+
+.track_item:hover .hidden {
+  opacity: 1;
+  transform: translateY(0); /* slide up to its actual position */
+}
+
+.track_item img {
+  transition: transform 0.3s ease;
+}
+
+.track_item:hover img {
+  transform: scale(0.7);
+}
 
 @media (prefers-color-scheme: light) {
   :root {
