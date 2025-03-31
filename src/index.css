@@ -51,6 +51,54 @@ body {
   box-sizing: border-box;
 }
 
+.article-background {
+  background: linear-gradient(to bottom, #D4A017, #000000);
+  padding: 49px 58px 59.5px 58px;
+  border-radius: 10px;
+  width: 1274px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+article h1 {
+  font: normal 600 69.15px YapariTrial;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.track_container h2 {
+  font: normal 600 20.16px Poppins;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.track_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(406px, 1fr));
+  margin: 0 auto;
+}
+
+.track_item {
+  background-color: rgba(107, 102, 102, 0.07);
+  backdrop-filter: 5px;
+  margin: 9.5px 15px 9.5px 15px;
+  border-radius: 30.94px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px dashed rgba(241, 241, 241, 1);
+  min-height: 289px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+}
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
