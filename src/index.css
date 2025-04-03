@@ -230,6 +230,31 @@ nav a:hover{
   font-family: YapariTrial;
   font-weight: bold;
   line-height: 80%;
+  color: rgba(250, 164, 26, 0.4);
+  animation: fastBlink 2s ease-in-out infinite;
+}
+
+@keyframes fastBlink {
+  0% { 
+  color: rgba(250, 164, 26, 0.4);
+  text-shadow: none;
+  }
+  40% { 
+    color: rgba(250, 164, 26, 0.4);
+    text-shadow: none;
+  }
+  50% { 
+    color: white;
+    text-shadow: 0 0 8px white;
+  }
+  60% { 
+    color: rgba(250, 164, 26, 0.4);
+    text-shadow: none;
+  }
+  100% { 
+    color: rgba(250, 164, 26, 0.4);
+    text-shadow: none;
+  }
 }
 
 .left_2{
@@ -297,6 +322,19 @@ nav a:hover{
   font-size: 48px;
   color: #FAA41A;
   line-height: 90%;
+  animation: slowBlink 2s ease-in-out infinite;
+}
+
+@keyframes slowBlink {
+  0% {
+    text-shadow: none;
+  }
+  50% { 
+    text-shadow: 0 0 10px #FAA41A;
+  }
+  100% { 
+    text-shadow: none;
+  }
 }
 
 .right_1 p{
