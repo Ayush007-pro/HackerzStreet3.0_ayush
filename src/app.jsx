@@ -69,10 +69,10 @@ function App() {
               <div class="right_date">APRIL 2025</div>
             </div>
             <div class='right_3'>
-              <div><img src='/social_media/instagram.svg' /></div>
-              <div><img src='/social_media/linkedin.svg' /></div>
-              <div><img src='/social_media/medium.svg' /></div>
-              <div><img src='/social_media/twitter.svg' /></div>
+              <div><a href='https://www.instagram.com/ieee_csmuj/'><img src='/social_media/instagram.svg'/></a></div>
+              <div><a href='https://www.linkedin.com/company/ieee-cs-muj'><img src='/social_media/linkedin.svg'/></a></div>
+              <div><a href='https://medium.com/@ieeecs'><img src='/social_media/medium.svg'/></a></div>
+              <div><a href='https://x.com/ieeecsmuj'><img src='/social_media/twitter.svg'/></a></div>
             </div>
           </div>
         </div>
@@ -286,10 +286,10 @@ function App() {
             <a href='https://cs.ieeemuj.com/'>https://cs.ieeemuj.com/</a>
           </div>
           <div class='media_icons'>
-            <img src='/social_media/instagram.svg' />
-            <img src='/social_media/linkedin.svg'/>
-            <img src='/social_media/medium.svg'/>
-            <img src='/social_media/twitter.svg'/>
+            <a href='https://www.instagram.com/ieee_csmuj/'><img src='/social_media/instagram.svg'/></a>
+            <a href='https://www.linkedin.com/company/ieee-cs-muj'><img src='/social_media/linkedin.svg'/></a>
+            <a href='https://medium.com/@ieeecs'><img src='/social_media/medium.svg'/></a>
+            <a href='https://x.com/ieeecsmuj'><img src='/social_media/twitter.svg'/></a>
           </div>
           <div class='tagline'>Made with 💛 by IEEE CS MUJ</div>
         </div>
