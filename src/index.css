@@ -368,10 +368,15 @@ nav a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
   border: 1px dashed #ffffff;
   border-radius: 10px; 
   padding: 10px 10px 7px 10px;
   cursor: pointer;
+}
+
+.right_3 div:hover{
+  background-color: #FAA41A;
 }
 
 .sponsors{
@@ -819,6 +824,11 @@ footer{
   margin: 0 auto;
 }
 
+.footer_contacts a{
+  text-decoration: none;
+  color: white;
+}
+
 .social_media{
   display: flex;
   flex-direction: column;
@@ -839,6 +849,10 @@ footer{
   font-size: 1rem;
 }
 
+.links img{
+  padding-top: 5px;
+}
+
 .media_icons{
   display: flex;
   flex-direction: row;
@@ -850,6 +864,11 @@ footer{
   border: 1px solid white;
   border-radius: 1rem;
   padding: 10px;
+  cursor: pointer;
+}
+
+.media_icons img:hover{
+  background-color: #FAA41A;
 }
 
 @media (prefers-color-scheme: light) {

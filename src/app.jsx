@@ -43,7 +43,7 @@ function App() {
                 <p>Scroll to find out!</p>
               </div>
               <div class='left_3_2'>
-                <img src='/home_down_arrow.svg'/>
+                <a href='#schedule'><img src='/home_down_arrow.svg' width={15} /></a>
               </div>
             </div>
           </div>
@@ -266,23 +266,23 @@ function App() {
         <div class='footer_contacts'>
           <div>
             <span>Rishi Joshi</span>
-            <p>+91 95699 131</p>
+            <a href='tel:+919569913103'><p>+91 95699 13103</p></a>
             <p>Chairperson</p>
           </div>
           <div>
             <span>Pranav Bhardwaj</span>
-            <p>+91 99995 58266</p>
+            <a href='tel:+919999558266'><p>+91 99995 58266</p></a>
             <p>Vice-Chairperson</p>
           </div>
           <div>
             <span>Mohit Hingorani</span>
-            <p>+91 98110 33533</p>
+            <a href='tel:+919811033533'><p>+91 98110 33533</p></a>
             <p>General Secretary</p>
           </div>
         </div>
         <div class='social_media'>
           <div class='links'>
-            <img src='/social_media/globe.svg'/>
+            <a href='https://cs.ieeemuj.com/'><img src='/social_media/globe.svg'/></a>
             <a href='https://cs.ieeemuj.com/'>https://cs.ieeemuj.com/</a>
           </div>
           <div class='media_icons'>
