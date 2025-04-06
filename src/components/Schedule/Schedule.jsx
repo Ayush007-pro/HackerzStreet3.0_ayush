@@ -108,7 +108,6 @@ export default function Schedule() {
 }
 
 Schedule.propTypes = {
-  // If you want to make this component reusable with custom schedule
   schedule: PropTypes.shape({
     round1: PropTypes.shape({
       date: PropTypes.shape({
@@ -144,5 +143,5 @@ Schedule.propTypes = {
 };
 
 Schedule.defaultProps = {
-  schedule: null // If null, uses internal scheduleData
+  schedule: null
 };
