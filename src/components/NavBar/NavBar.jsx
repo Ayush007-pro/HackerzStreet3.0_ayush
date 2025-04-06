@@ -23,6 +23,8 @@ export default function NavBar() {
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
+      <div className='void_header'></div>
       
       <div className="register-button">
         <a href="#">REGISTER</a>
