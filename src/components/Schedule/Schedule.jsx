@@ -50,11 +50,14 @@ export default function Schedule() {
                 </div>
                 {index < scheduleData.round1.events.length - 1 && (
                   <div>
-                    <img className="schedule_arrow" src="/schedule/connector_line.svg" alt="arrow" />
+                    <img className="schedule_arrow schedule_arrow-1" src="/schedule/connector_line.svg" alt="arrow" />
                   </div>
                 )}
               </React.Fragment>
             ))}
+            <div className='responsive_arrow'>
+              <img className="schedule_arrow schedule_arrow-1" src="/schedule/connector_line.svg" alt="arrow" />
+            </div>
           </div>
 
           <div className="roadmap_part-2">
@@ -66,7 +69,7 @@ export default function Schedule() {
                 </div>
                 {index < scheduleData.round1.eventsReverse.length - 1 && (
                   <div>
-                    <img className="schedule_arrow" src="/schedule/connector_line_reverse.svg" alt="arrow" />
+                    <img className="schedule_arrow schedule_arrow-2" src="/schedule/connector_line_reverse.svg" alt="arrow" />
                   </div>
                 )}
               </React.Fragment>
@@ -92,7 +95,7 @@ export default function Schedule() {
                 </div>
                 {index < scheduleData.round2.events.length - 1 && (
                   <div>
-                    <img className="schedule_arrow" src="/schedule/connector_line.svg" alt="arrow" />
+                    <img className="schedule_arrow schedule_arrow-1" src="/schedule/connector_line.svg" alt="arrow" />
                   </div>
                 )}
               </React.Fragment>

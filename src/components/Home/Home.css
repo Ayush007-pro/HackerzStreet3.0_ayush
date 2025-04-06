@@ -248,6 +248,12 @@
   background-color: #FAA41A;
 }
 
+@media screen and (max-width: 1100px){
+  .home_heading {
+    font-size: 3.5rem;
+  }
+}
+
 @media screen and (max-width: 1024px){
   .home{
     padding: 0rem 2rem;
