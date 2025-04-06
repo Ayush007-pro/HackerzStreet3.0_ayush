@@ -1,0 +1,12 @@
+.sponsors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background:transparent;
+    padding: 0px;                                                                                                                                                                                                                                                                                                                                                                                            
+    width: 100%;
+    /* box-sizing: content-box; */
+    margin: 5rem auto;
+}  
