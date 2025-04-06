@@ -1,0 +1,137 @@
+/* Default styles (for large screens) */
+
+.schedule-container {
+    text-align: center;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    width: 1400px;
+  }
+  
+  .schedule-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .schedule-subtitle {
+    font-size: 1.2rem;
+    color: #f5a623;
+    margin-bottom: 40px;
+  }
+  
+  .schedule-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .schedule-day {
+    width: 80%;
+    border-left: 2px dashed #f5a623;
+    padding-left: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;
+  }
+  
+  .schedule-date {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f5a623;
+    text-align: left;
+  }
+  
+  .schedule-events {
+    margin-top: 20px;
+  }
+  
+  .schedule-event {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+    border: 2px solid #f5a623;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(255, 165, 35, 0.3);
+  }
+  
+  .event-time {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ddd;
+  }
+  
+  .event-description {
+    font-size: 1rem;
+    color: #bbb;
+    margin-top: 5px;
+  }
+  
+  /* RESPONSIVE DESIGN */
+  
+  /* Adjust styles for laptops and tablets (medium screens) */
+  @media (max-width: 2500px) {
+    .schedule-container {
+      padding: none;
+    }
+  
+    .schedule-title {
+      font-size: 2.5rem;
+    }
+  
+    .schedule-subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .schedule-day {
+      width: 85%;
+    }
+  
+    .schedule-event {
+      max-width: 80%;
+    }
+  }
+  
+  /* Adjust styles for smaller laptops/tablets */
+  @media (max-width: 1500px) {
+    .schedule-title {
+      font-size: 2rem;
+    }
+  
+    .schedule-date {
+      font-size: 1.8rem;
+    }
+  
+    .schedule-event {
+      padding: 12px;
+      max-width: 90%;
+    }
+  }
+  
+  /* Adjust styles for mobile screens */
+  @media (max-width: 768px) {
+    .schedule-title {
+      font-size: 1.8rem;
+    }
+  
+    .schedule-subtitle {
+      font-size: 1rem;
+    }
+  
+    .schedule-date {
+      font-size: 1.5rem;
+    }
+  
+    .schedule-day {
+      width: 95%;
+    }
+  
+    .schedule-event {
+      padding: 10px;
+      max-width: 100%;
+    }
+  }
+  
