@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import App from './app.jsx'
 import NavBar from './components/NavBar/NavBar.jsx'
 import Home from './components/Home/Home.jsx'
 import Sponsors from './components/Sponsors/Sponsors.jsx'
@@ -18,5 +19,6 @@ createRoot(document.getElementById('root')).render(
     <Tracks />
     <About_Us />
     <Footer />
+    <App />
   </StrictMode>,
 )
