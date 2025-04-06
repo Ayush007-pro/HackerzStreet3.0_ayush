@@ -1,102 +1,145 @@
-import React from 'react'
-import './Schedule.css'
+import React from 'react';
+import PropTypes from 'prop-types';
+import './Schedule.css';
 
 export default function Schedule() {
+  const scheduleData = {
+    round1: {
+      date: { day: '12', month: 'April' },
+      events: [
+        { time: '11:00 AM', description: 'Problem statements are released at the website and the hackathon begins.' },
+        { time: '12:00 PM', description: 'Participants are provided with refreshments.' },
+        { time: '3:00 PM', description: 'Mentorship round 1 begins.' }
+      ],
+      eventsReverse: [
+        { time: '6:00 PM', description: 'Mentorship round 2 begins.' },
+        { time: '10:00 PM', description: 'Round 1 officially ends and the submission link is closed.' },
+        { time: '12:00 AM', description: 'Round 1 results are announced.' }
+      ]
+    },
+    round2: {
+      date: { day: '13', month: 'April' },
+      events: [
+        { time: '10:00 AM', description: 'Participants report to the venue given.' },
+        { time: '11:00 AM', description: 'Round 2 starts.' },
+        { time: '2:00 PM', description: 'Round 2 ends.' }
+      ]
+    }
+  };
+
   return (
-    <section id='schedule' class='schedule'>
+    <section id="schedule" className="schedule">
       <h1>SCHEDULE</h1>
       
-      <div class="schedule_container">
+      <div className="schedule_container">
         <h2>Elevate your skills and collaborate with fellow coders!</h2>
         
-        <article class='roadmap'>
-          <p class='schedule_heading'>Round 1</p>
-          <div class='roadmap_part-1'>
-
-            <div class='date_container'>
-              <div class='date'>12</div>
-              <div class='month'>April</div>
+        <article className="roadmap">
+          <p className="schedule_heading">Round 1</p>
+          <div className="roadmap_part-1">
+            <div className="date_container">
+              <div className="date">{scheduleData.round1.date.day}</div>
+              <div className="month">{scheduleData.round1.date.month}</div>
             </div>
 
-            <div class='schedule_details'>
-              <div class='timmings'>11:00 AM</div>
-              <p>Problem statements are released at the website and the hackathon begins.</p>
-            </div>
-
-            <div><img class='schedule_arrow' src="/schedule/connector_line.svg" alt="arrow"/></div>
-
-            <div class='schedule_details'>
-              <div class='timmings'>12:00 PM</div>
-              <p>Participants are provided with refreshments.</p>
-            </div>
-
-            <div><img class='schedule_arrow' src="/schedule/connector_line.svg" alt="arrow"/></div>
-          
-            <div class='schedule_details'>
-              <div class='timmings'>3:00 PM</div>
-              <p>Mentorship round 1 begins.</p>
-            </div>
+            {scheduleData.round1.events.map((event, index) => (
+              <React.Fragment key={`r1-${index}`}>
+                <div className="schedule_details">
+                  <div className="timmings">{event.time}</div>
+                  <p>{event.description}</p>
+                </div>
+                {index < scheduleData.round1.events.length - 1 && (
+                  <div>
+                    <img className="schedule_arrow" src="/schedule/connector_line.svg" alt="arrow" />
+                  </div>
+                )}
+              </React.Fragment>
+            ))}
           </div>
 
-          <div class='roadmap_part-2'>
-
-            <div class='schedule_details'>
-              <div class='timmings'>12:00 AM</div>
-              <p>Round 1 results are announced.</p>
-            </div>
-
-            <div><img class='schedule_arrow' src="/schedule/connector_line_reverse.svg" alt="arrow"/></div>
-
-            <div class='schedule_details'>
-              <div class='timmings'>10:00 PM</div>
-              <p>Round 1 officially ends and the submission link is closed.</p>
-            </div>
-
-            <div><img class='schedule_arrow' src="/schedule/connector_line_reverse.svg" alt="arrow"/></div>
-          
-            <div class='schedule_details'>
-              <div class='timmings'>6:00 PM</div>
-              <p>Mentorship round 2 begins.</p>
-            </div>
-
-            <div class='nextline_arrow'>
-              <img class='schedule_arrow' src="/schedule/connector_line_turn.svg" alt="arrow"/>
+          <div className="roadmap_part-2">
+            {scheduleData.round1.eventsReverse.map((event, index) => (
+              <React.Fragment key={`r1r-${index}`}>
+                <div className="schedule_details">
+                  <div className="timmings">{event.time}</div>
+                  <p>{event.description}</p>
+                </div>
+                {index < scheduleData.round1.eventsReverse.length - 1 && (
+                  <div>
+                    <img className="schedule_arrow" src="/schedule/connector_line_reverse.svg" alt="arrow" />
+                  </div>
+                )}
+              </React.Fragment>
+            ))}
+            <div className="nextline_arrow">
+              <img className="schedule_arrow" src="/schedule/connector_line_turn.svg" alt="arrow" />
               <div></div>
             </div>
-            
           </div>
 
-          <p class='schedule_heading'>Round 2</p>
-          <div class='roadmap_part-3'>
-
-            <div class='date_container'>
-              <div class='date'>13</div>
-              <div class='month'>April</div>
+          <p className="schedule_heading">Round 2</p>
+          <div className="roadmap_part-3">
+            <div className="date_container">
+              <div className="date">{scheduleData.round2.date.day}</div>
+              <div className="month">{scheduleData.round2.date.month}</div>
             </div>
 
-            <div class='schedule_details'>
-              <div class='timmings'>10:00 AM</div>
-              <p>Participants report to the venue given.</p>
-            </div>
-
-            <div><img class='schedule_arrow' src="/schedule/connector_line.svg" alt="arrow"/></div>
-
-            <div class='schedule_details'>
-              <div class='timmings'>11:00 AM</div>
-              <p>Round 2 starts.</p>
-            </div>
-
-            <div><img class='schedule_arrow' src="/schedule/connector_line.svg" alt="arrow"/></div>
-          
-            <div class='schedule_details'>
-              <div class='timmings'>2:00 PM</div>
-              <p>Round 2 ends.</p>
-            </div>
+            {scheduleData.round2.events.map((event, index) => (
+              <React.Fragment key={`r2-${index}`}>
+                <div className="schedule_details">
+                  <div className="timmings">{event.time}</div>
+                  <p>{event.description}</p>
+                </div>
+                {index < scheduleData.round2.events.length - 1 && (
+                  <div>
+                    <img className="schedule_arrow" src="/schedule/connector_line.svg" alt="arrow" />
+                  </div>
+                )}
+              </React.Fragment>
+            ))}
           </div>
-
         </article>
-
       </div>
     </section>
-  )
+  );
 }
+
+Schedule.propTypes = {
+  // If you want to make this component reusable with custom schedule
+  schedule: PropTypes.shape({
+    round1: PropTypes.shape({
+      date: PropTypes.shape({
+        day: PropTypes.string,
+        month: PropTypes.string
+      }),
+      events: PropTypes.arrayOf(
+        PropTypes.shape({
+          time: PropTypes.string,
+          description: PropTypes.string
+        })
+      ),
+      eventsReverse: PropTypes.arrayOf(
+        PropTypes.shape({
+          time: PropTypes.string,
+          description: PropTypes.string
+        })
+      )
+    }),
+    round2: PropTypes.shape({
+      date: PropTypes.shape({
+        day: PropTypes.string,
+        month: PropTypes.string
+      }),
+      events: PropTypes.arrayOf(
+        PropTypes.shape({
+          time: PropTypes.string,
+          description: PropTypes.string
+        })
+      )
+    })
+  })
+};
+
+Schedule.defaultProps = {
+  schedule: null // If null, uses internal scheduleData
+};
