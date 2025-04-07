@@ -119,7 +119,7 @@ footer{
 }
   
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
     footer {
         width: 100%;
         padding: 24px 20px;
@@ -164,7 +164,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     footer {
         display: flex;
         flex-direction: column;
