@@ -81,7 +81,9 @@ footer{
     flex-direction: column;
     flex: 1fr;
     gap: 1rem;
-    padding: 50px;
+    /* padding: 20px; */
+    padding-top: 50px;
+    padding-left: 50px;
 }
   
 .links{
@@ -184,11 +186,11 @@ footer{
     }
 
     .footer_logo img {
-        height: 50px;
+        height: 40px;
     }
 
     .footer_logo_child div {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .footer_contacts div span{
