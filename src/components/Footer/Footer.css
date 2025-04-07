@@ -198,4 +198,16 @@ footer{
     .footer_contacts div p{
         font-size: 10px;
     }
+
+    .links a{
+        font-size: 0.8rem;
+    }
+
+    .media_icons img{
+        width: 40px;
+    }
+
+    .tagline{
+        font-size: 0.8rem;
+    }
 }
