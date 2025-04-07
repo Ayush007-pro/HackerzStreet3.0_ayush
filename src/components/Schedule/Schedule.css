@@ -1,3 +1,8 @@
+.schedule{
+  width: 96%;
+  margin: auto;
+}
+
 .schedule h1 {
   font: normal 600 69.15px YapariTrial;
   line-height: 100%;

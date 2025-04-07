@@ -21,37 +21,43 @@ export default function Footer({ contacts, socialLinks }) {
 
   return (
     <footer id="contact">
-      <div className="footer_logo">
-        <img src="/footer/footer_logo.svg" alt="Footer Logo" />
-        <div>/</div>
-        <img src="/footer/ieee_main_logo_large.svg" alt="IEEE CS Logo" />
-      </div>
-      <div className="footer_contacts">
-        {contactList.map((contact, index) => (
-          <div key={index}>
-            <span>{contact.name}</span>
-            <a href={`tel:${contact.phone}`}>
-              <p>{contact.phone}</p>
-            </a>
-            <p>{contact.role}</p>
+      <div className='footer_part-1'>
+        <div className="footer_logo">
+          <div className='footer_logo_child'>
+            <img src="/footer/footer_logo.svg" alt="Footer Logo" />
+            <div>/</div>
           </div>
-        ))}
-      </div>
-      <div className="social_media">
-        <div className="links">
-          <a href="https://cs.ieeemuj.com/">
-            <img src="/social_media/globe.svg" alt="Website" />
-          </a>
-          <a href="https://cs.ieeemuj.com/">https://cs.ieeemuj.com/</a>
+          <img src="/footer/ieee_main_logo_large.svg" alt="IEEE CS Logo" />
         </div>
-        <div className="media_icons">
-          {socialMediaList.map((link, index) => (
-            <a key={index} href={link.href}>
-              <img src={link.src} alt={link.alt} />
-            </a>
+      </div>
+      <div className='footer_part-2'>
+        <div className="footer_contacts">
+          {contactList.map((contact, index) => (
+            <div key={index}>
+              <span>{contact.name}</span>
+              <a href={`tel:${contact.phone}`}>
+                <p>{contact.phone}</p>
+              </a>
+              <p>{contact.role}</p>
+            </div>
           ))}
         </div>
-        <div className="tagline">Made with 💛 by IEEE CS MUJ</div>
+        <div className="social_media">
+          <div className="links">
+            <a href="https://cs.ieeemuj.com/">
+              <img src="/social_media/globe.svg" alt="Website" />
+            </a>
+            <a href="https://cs.ieeemuj.com/">https://cs.ieeemuj.com/</a>
+          </div>
+          <div className="media_icons">
+            {socialMediaList.map((link, index) => (
+              <a key={index} href={link.href}>
+                <img src={link.src} alt={link.alt} />
+              </a>
+            ))}
+          </div>
+          <div className="tagline">Made with 💛 by IEEE CS MUJ</div>
+        </div>
       </div>
     </footer>
   );

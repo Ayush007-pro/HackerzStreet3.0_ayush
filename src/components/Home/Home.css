@@ -6,6 +6,8 @@
   border-radius: 40px;
   position: relative;
   min-height: 100vh;
+  width: 96%;
+  margin: auto;
 }
 
 .home_heading{
@@ -323,7 +325,7 @@
   }
 
   .left_3 {
-    transform: translateY(300px);
+    transform: translateY(400px);
   }
 
   .left_3_1{

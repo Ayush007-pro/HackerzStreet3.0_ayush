@@ -15,9 +15,9 @@
     );
     /* background-image: url('/tracks_background.svg'); */
     padding: 49px 58px 59.5px 58px;                                                                                                                                                                                                                                                                                                                                                                                            
-    border-radius: 10px;
-    /* width: 1274px; */
-    width: 1440px;
+    border-radius: 3rem;
+    /* width:1440px; */
+    width:96%;
     margin: 3rem auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
